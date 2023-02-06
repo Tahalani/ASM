@@ -3,7 +3,7 @@ bits 64
 global strlen
 
 section .text
-    _strlen:
+    strlen:
         xor rcx, rcx
         jmp _loop
     _loop:
@@ -12,5 +12,5 @@ section .text
         inc rcx
         jmp _loop
     _exit:
-        mov rax, rcx
+        mov rax, 60
         ret
