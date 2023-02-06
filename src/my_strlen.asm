@@ -12,5 +12,5 @@ section .text
         inc rcx
         jmp _loop
     _exit:
-        mov rax, 60
+        mov rax, rcx
         ret
