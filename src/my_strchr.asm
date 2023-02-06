@@ -5,6 +5,7 @@ global strchr
 section .text
     strchr:
         xor rax, rax
+        jmp _loop
     _loop:
         cmp sil, BYTE [rdi]
         je exit

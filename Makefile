@@ -8,6 +8,7 @@
 SRC			=	src/my_strlen.asm	\
 				src/my_strchr.asm	\
 				src/my_strrchr.asm	\
+				src/my_memset.asm	\
 
 EXTENSION	=	.asm
 
