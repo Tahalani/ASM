@@ -1,9 +1,9 @@
 bits 64
 
-global my_strpbrk
+global strpbrk
 
 section .text
-    my_strpbrk:
+    strpbrk:
         xor rcx, rcx ; index pour parcourir la deuxième string
     _loop:
         mov r8b, BYTE [rdi] ; On met rdi dans un registre afin de l'utiliser dans la comparaison en dessous
