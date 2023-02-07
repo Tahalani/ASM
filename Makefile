@@ -5,10 +5,13 @@
 ## Makefile
 ##
 
-SRC			=	src/my_strlen.asm	\
-				src/my_strchr.asm	\
-				src/my_strrchr.asm	\
-				src/my_memset.asm	\
+SRC			=	src/strlen.asm	\
+				src/strchr.asm	\
+				src/strrchr.asm	\
+				src/memset.asm	\
+				src/memcpy.asm	\
+				src/strcmp.asm	\
+				src/memmove.asm	\
 
 EXTENSION	=	.asm
 
