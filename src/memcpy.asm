@@ -1,9 +1,9 @@
 bits 64
 
-global memcpy
+global my_memcpy
 
 section .text
-    memcpy:
+    my_memcpy:
         xor rcx, rcx
         mov r8b, 0
         jmp _loop
@@ -15,6 +15,5 @@ section .text
         inc rcx
         jmp _loop
     _exit:
-        mov rdi, 0
         mov rax, rdi
         ret
