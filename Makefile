@@ -15,6 +15,7 @@ SRC			=	src/strlen.asm	\
 				src/strncmp.asm	\
 				src/strstr.asm	\
 				src/strpbrk.asm	\
+				src/strcspn.asm	\
 
 EXTENSION	=	.asm
 
