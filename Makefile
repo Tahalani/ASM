@@ -5,17 +5,18 @@
 ## Makefile
 ##
 
-SRC			=	src/strlen.asm	\
-				src/strchr.asm	\
-				src/strrchr.asm	\
-				src/memset.asm	\
-				src/memcpy.asm	\
-				src/strcmp.asm	\
-				src/memmove.asm	\
-				src/strncmp.asm	\
-				src/strstr.asm	\
-				src/strpbrk.asm	\
-				src/strcspn.asm	\
+SRC			=	src/strlen.asm		\
+				src/strchr.asm		\
+				src/strrchr.asm		\
+				src/memset.asm		\
+				src/memcpy.asm		\
+				src/strcmp.asm		\
+				src/memmove.asm		\
+				src/strncmp.asm		\
+				src/strstr.asm		\
+				src/strpbrk.asm		\
+				src/strcspn.asm		\
+				src/strcasecmp.asm	\
 
 EXTENSION	=	.asm
 
