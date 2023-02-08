@@ -7,8 +7,8 @@ section .text
         xor rcx, rcx ; compteur pour la deuxieme string
         mov r8, rdi ; compteur pour la premiere string
         mov r9, rdi ; Met le pointeur sur la première lettre de la string recherchée
-        mov r10b, 0
-        mov r11b, 0
+        mov r10b, 0 ; Met 0 dans un registre pour pouvoir le comparer avec les characteres
+        mov r11b, 0 ; Met 0 dans un registre pour pouvoir le comparer avec les characteres
     _loop:
         cmp BYTE [r8], 0 ; Si la premiere string arrive a sa fin
         je _exit_not_exist ; quitte la fonction
@@ -29,10 +29,10 @@ section .text
         cmp r10b, r11b ; Comparer les characteres
         je _check_next_char ; Check les prochains characteres
     _not_equal:
-        inc r8
+        inc r8 ; incremente r9 qui est le compteur permettant de se deplacer dans la deuxième string
         cmp BYTE [r8], 0 ; Si la premiere string arrive a sa fin
         je _exit_not_exist ; quitte la fonction
-        inc r9
+        inc r9 ; incremente r9 qui est le compteur permettant de se deplacer dans la deuxième string
         mov rcx, 0 ; remet l'index de la deuxieme string à 0
         jmp _loop ; rappelle le label _loop tant que on est pas arriver a la fin de la string
     _check_next_char:
