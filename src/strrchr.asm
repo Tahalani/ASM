@@ -12,9 +12,9 @@ section .text
         jne _not_equal
         mov r12, rdi
     _not_equal:
-        inc rdi
         cmp BYTE [rdi], 0
         je exit
+        inc rdi
         jmp _loop
     exit:
         mov rax, r12

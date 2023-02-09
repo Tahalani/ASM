@@ -9,9 +9,9 @@ section .text
     _loop:
         cmp sil, BYTE [rdi]
         je exit
-        inc rdi
         cmp BYTE [rdi], 0
         je exit_null
+        inc rdi
         jmp _loop
     exit:
         mov rax, rdi
