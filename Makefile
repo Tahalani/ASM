@@ -11,7 +11,6 @@ SRC			=	src/strlen.asm		\
 				src/memset.asm		\
 				src/memcpy.asm		\
 				src/strcmp.asm		\
-				src/memmove.asm		\
 				src/strncmp.asm		\
 				src/strstr.asm		\
 				src/strpbrk.asm		\
