@@ -1,9 +1,9 @@
 bits 64
 
-global my_strstr
+global strstr
 
 section .text
-    my_strstr:
+    strstr:
         xor rcx, rcx ; compteur pour la deuxieme string
         mov r8, rdi ; compteur pour la premiere string
         mov r9, rdi ; Met le pointeur sur la première lettre de la string recherchée
