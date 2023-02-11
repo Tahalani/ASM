@@ -13,12 +13,13 @@ SRC			=	src/strlen.asm		\
 				src/memmove.asm		\
 				src/strcmp.asm		\
 				src/strncmp.asm		\
+				src/strcasecmp.asm	\
 				src/strstr.asm		\
 				src/strpbrk.asm		\
 				src/strcspn.asm		\
-				src/strcasecmp.asm	\
 				src/index.asm		\
 				src/rindex.asm		\
+				src/ffs.asm			\
 
 EXTENSION	=	.asm
 
