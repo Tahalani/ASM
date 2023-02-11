@@ -1,15 +1,17 @@
 bits 64
 
-global strstr
+global my_strstr
 
 section .text
-    strstr:
+    my_strstr:
         xor rcx, rcx ; compteur pour la deuxieme string
         mov r8, rdi ; compteur pour la premiere string
         mov r9, rdi ; Met le pointeur sur la première lettre de la string recherchée
         mov r10b, 0 ; Met 0 dans un registre pour pouvoir le comparer avec les characteres
         mov r11b, 0 ; Met 0 dans un registre pour pouvoir le comparer avec les characteres
     _loop:
+        cmp BYTE [rdi], 0 ; Si la premiere string arrive a sa fin
+        je _exit_not_exist ; quitte la fonction
         cmp BYTE [r8], 0 ; Si la premiere string arrive a sa fin
         je exit ; quitte la fonction
         cmp BYTE [rsi + rcx], 0 ; Si la premiere string arrive a sa fin
