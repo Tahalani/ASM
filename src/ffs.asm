@@ -1,9 +1,9 @@
 bits 64
 
-global my_ffs
+global ffs
 
 section .text
-    my_ffs:
+    ffs:
         cmp rdi, 0
         je _exit_null
         jne exit
