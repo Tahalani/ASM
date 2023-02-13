@@ -1,8 +1,10 @@
 bits 64
 
 global strrchr
+global rindex
 
 section .text
+    rindex:
     strrchr:
         xor rax, rax
         xor r12, r12

@@ -1,8 +1,10 @@
 bits 64
 
 global strchr
+global index
 
 section .text
+    index:
     strchr:
         xor rax, rax
         jmp _loop

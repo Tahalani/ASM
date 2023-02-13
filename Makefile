@@ -17,8 +17,6 @@ SRC			=	src/strlen.asm		\
 				src/strstr.asm		\
 				src/strpbrk.asm		\
 				src/strcspn.asm		\
-				src/index.asm		\
-				src/rindex.asm		\
 				src/ffs.asm			\
 
 EXTENSION	=	.asm
