@@ -18,6 +18,7 @@ SRC			=	src/strlen.asm		\
 				src/strpbrk.asm		\
 				src/strcspn.asm		\
 				src/ffs.asm			\
+				src/memfrob.asm		\
 
 EXTENSION	=	.asm
 
