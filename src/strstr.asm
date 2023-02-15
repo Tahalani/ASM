@@ -10,11 +10,11 @@ section .text
         mov r10b, 0 ; Met 0 dans un registre pour pouvoir le comparer avec les characteres
         mov r11b, 0 ; Met 0 dans un registre pour pouvoir le comparer avec les characteres
     _loop:
+        cmp BYTE [rsi + rcx], 0 ; Si la premiere string arrive a sa fin
+        je exit ; quitte la fonction
         cmp BYTE [rdi], 0 ; Si la premiere string arrive a sa fin
         je _exit_not_exist ; quitte la fonction
         cmp BYTE [r8], 0 ; Si la premiere string arrive a sa fin
-        je exit ; quitte la fonction
-        cmp BYTE [rsi + rcx], 0 ; Si la premiere string arrive a sa fin
         je exit ; quitte la fonction
         mov r11b, BYTE [r8] ; On les met dans des registres afin de les utiliser dans la comparaison en dessous
         mov r10b, BYTE [rsi + rcx] ; On les met dans des registres afin de les utiliser dans la comparaison en dessous
